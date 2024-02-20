@@ -9,9 +9,9 @@
 
 <body>
 
-    <img id="countryImage" src="" alt="Country Image">
     <input type="text" placeholder="Enter Country Name" id="countryName">
     <button onclick="clicky()">Sub</button>
+    <img id="countryImage" src="" alt="">
 
 
     <script>
@@ -155,23 +155,14 @@
             }
         }
 
-        // class Madagascar {
-        // constructor(countryName, detail, cap, Rep) {
-        // this.country = countryName,
-        // this.Detail = detail,
-        // this.Capital = cap,
-        // this.Resource = Rep
-        // }
-        // }
-
         const clicky = () => {
             let countryName = document.getElementById("countryName").value;
             if (countryName == '') {
                 console.log('Please enter a country name');
             } else if (countryName == "Nigeria") {
-                let student1 = new Nigeria("Nigeria", "bjkb", "njnijnijn", "giibihb");
+                let student1 = new Nigeria("Nigeria", "bjkb", "njnijnijn", "giibihb", "nigeria.jpg");
                 console.log(student1);
-                document.getElementById("countryImage").src = country.ImageSrc;
+                document.getElementById("countryImage").src = student1.ImageSrc; 
                 document.getElementById("countryName").value = ""
 
             } else if (countryName == "Egypt") {
@@ -231,6 +222,11 @@
                 let student11 = new Senegal("Senegal", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh")
                 console.log(student11);
                 document.getElementById("countryName").value = ""
+            }else {
+                console.log('Country not found');
+                // Reset the image source and input field
+                document.getElementById("countryImage").src = "";
+                document.getElementById("countryName").value = "";
             }
         }
     </script>
