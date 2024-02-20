@@ -1,5 +1,10 @@
+.done{
+  
+}
+
+
 .e-card {
-    /* margin: 100px auto; */
+    margin: 100px auto;
     background: transparent;
     box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
     position: relative;
@@ -91,3 +96,23 @@
     width: 100px; 
     height: 100px
   }
+
+  body, .modall {
+    background-color: pink;
+}
+
+body::after {
+    position: absolute;
+    content: "";
+    background-color: white;
+    inset: 0;
+    left: 30%;
+    z-index: -1;
+    clip-path: polygon(
+            39% 0,
+            100% 0,
+            100% 100%,
+            10% 80%,
+            0% 100%
+  );
+}
