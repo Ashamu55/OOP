@@ -132,14 +132,29 @@ const clicky = () => {
     } else if (countryName == "Nigeria") {
         let student1 = new Nigeria("Nigeria", "bjkb", "njnijnijn", "giibihb", "Nigeria.jpeg");
         console.log(student1);
-        document.getElementById("disp").innerHTML =`
-        <h1>${countryName}</h1>
-        <h1>${student1.Detail}</h1>
-        <h1>${student1.Capital}</h1>
-        <h1>${student1.Resource}</h1>
-        <img  src=${ student1.ImageSrc} src="Nigeria.jpeg" alt="" id="countryImage">
+        document.getElementById("disp").innerHTML = `
+        <div class="e-card playing">
+        <div class="image"></div>
+        
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        
+      
+            <div class="infotop">
+
+            <img  src="${student1.ImageSrc}"  alt="${student1.country}" id="countryImage">
+      <br>      
+      <h1>${countryName}</h1>
+      <div class="name">
+      <h1>${student1.Detail}</h1>
+      <h1>${student1.Capital}</h1>
+      <h1>${student1.Resource}</h1>
+       </div>
+        </div>
+      </div>
         `
-        document.getElementById("countryImage").src =
+        document.getElementById("countryImage").src = student1.ImageSrc;
         document.getElementById("countryName").value = ""
     } else if (countryName == "Egypt") {
         let student2 = new Egypt("Egypt", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Egypt.png")
