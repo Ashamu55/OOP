@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" placeholder="Enter Country Name" id="countryName">
+    <button onclick="clicky()">Sub</button>
+
+
+    <script>
+        class Nigeria {
+            constructor(countryName, detail, cap, Rep) {
+                this.country = countryName,
+                    this.Detail = detail,
+                    this.Capital = cap,
+                    this.Resource = Rep
+            }
+        }
+
+        class Egypt {
+            constructor(countryName, detail, cap, Rep) {
+                this.country = countryName,
+                    this.Detail = detail,
+                    this.Capital = cap,
+                    this.Resource = Rep
+            }
+        }
+
+        const clicky = () => {
+            let countryName = document.getElementById("countryName").value;
+            if (countryName == '') {
+                console.log('Please enter a country name');
+            } else if (countryName == "Nigeria") {
+                let student1 = new Nigeria("Nigeria","bjkb", "njnijnijn", "giibihb");
+                console.log(student1);
+            }else if(countryName == "Egypt"){
+                let student2 = new Egypt("Egypt","hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh")
+                console.log(student2);
+            }
+                
+                
+        }
+    </script>
+
+</body>
+
+</html>
