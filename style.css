@@ -1,10 +1,23 @@
 .done{
-  
+  margin: 100px auto;
+  width: 1300px;
+  height: 700px;
+  background-color: #0f2a3d69;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  padding-top: 30px !important;
+  padding-left: 280px;
+}
+
+#countryName{
+  /* margin-top: 100px !important; */
 }
 
 
 .e-card {
-    margin: 100px auto;
+    /* margin: 100px auto; */
+    margin-left: 250px;
+    margin-top: 40px;
     background: transparent;
     box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
     position: relative;
@@ -98,7 +111,7 @@
   }
 
   body, .modall {
-    background-color: pink;
+    background-color: midnightblue;
 }
 
 body::after {
