@@ -9,6 +9,7 @@
 
 <body>
 
+    <img id="countryImage" src="" alt="Country Image">
     <input type="text" placeholder="Enter Country Name" id="countryName">
     <button onclick="clicky()">Sub</button>
 
@@ -170,6 +171,7 @@
             } else if (countryName == "Nigeria") {
                 let student1 = new Nigeria("Nigeria", "bjkb", "njnijnijn", "giibihb");
                 console.log(student1);
+                document.getElementById("countryImage").src = country.ImageSrc;
                 document.getElementById("countryName").value = ""
 
             } else if (countryName == "Egypt") {
