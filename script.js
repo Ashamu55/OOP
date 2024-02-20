@@ -1,7 +1,7 @@
 class Nigeria {
     constructor(countryName, detail, cap, Rep, imageSrc) {
         this.country = countryName,
-            this.Detail = detail,
+            this.Money = detail,
             this.Capital = cap,
             this.Resource = Rep,
             this.ImageSrc = imageSrc;
@@ -10,7 +10,7 @@ class Nigeria {
 class Egypt {
     constructor(countryName, detail, cap, Rep, imageSrc) {
         this.country = countryName,
-            this.Detail = detail,
+            this.Money = detail,
             this.Capital = cap,
             this.Resource = Rep,
             this.ImageSrc = imageSrc;
@@ -19,7 +19,7 @@ class Egypt {
 class Madagascar {
     constructor(countryName, detail, cap, Rep, imageSrc) {
         this.country = countryName,
-            this.Detail = detail,
+            this.Money = detail,
             this.Capital = cap,
             this.Resource = Rep,
             this.ImageSrc = imageSrc;
@@ -28,7 +28,7 @@ class Madagascar {
 class Algeria {
     constructor(countryName, detail, cap, Rep, imageSrc) {
         this.country = countryName,
-            this.Detail = detail,
+            this.Money = detail,
             this.Capital = cap,
             this.Resource = Rep,
             this.ImageSrc = imageSrc;
@@ -37,7 +37,7 @@ class Algeria {
 class Ethiopia {
     constructor(countryName, detail, cap, Rep, imageSrc) {
         this.country = countryName,
-            this.Detail = detail,
+            this.Money = detail,
             this.Capital = cap,
             this.Resource = Rep,
             this.ImageSrc = imageSrc;
@@ -46,7 +46,7 @@ class Ethiopia {
 class Tanzania {
     constructor(countryName, detail, cap, Rep, imageSrc) {
         this.country = countryName,
-            this.Detail = detail,
+            this.Money = detail,
             this.Capital = cap,
             this.Resource = Rep,
             this.ImageSrc = imageSrc;
@@ -55,7 +55,7 @@ class Tanzania {
 class Kenya {
     constructor(countryName, detail, cap, Rep, imageSrc) {
         this.country = countryName,
-            this.Detail = detail,
+            this.Money = detail,
             this.Capital = cap,
             this.Resource = Rep,
             this.ImageSrc = imageSrc;
@@ -64,7 +64,7 @@ class Kenya {
 class Uganda {
     constructor(countryName, detail, cap, Rep, imageSrc) {
         this.country = countryName,
-            this.Detail = detail,
+            this.Money = detail,
             this.Capital = cap,
             this.Resource = Rep,
             this.ImageSrc = imageSrc;
@@ -73,7 +73,7 @@ class Uganda {
 class Morocco {
     constructor(countryName, detail, cap, Rep, imageSrc) {
         this.country = countryName,
-            this.Detail = detail,
+            this.Money = detail,
             this.Capital = cap,
             this.Resource = Rep,
             this.ImageSrc = imageSrc;
@@ -82,7 +82,7 @@ class Morocco {
 class Ghana {
     constructor(countryName, detail, cap, Rep, imageSrc) {
         this.country = countryName,
-            this.Detail = detail,
+            this.Money = detail,
             this.Capital = cap,
             this.Resource = Rep,
             this.ImageSrc = imageSrc;
@@ -91,7 +91,7 @@ class Ghana {
 class Angola {
     constructor(countryName, detail, cap, Rep, imageSrc) {
         this.country = countryName,
-            this.Detail = detail,
+            this.Money = detail,
             this.Capital = cap,
             this.Resource = Rep,
             this.ImageSrc = imageSrc;
@@ -100,7 +100,7 @@ class Angola {
 class Cameroon {
     constructor(countryName, detail, cap, Rep, imageSrc) {
         this.country = countryName,
-            this.Detail = detail,
+            this.Money = detail,
             this.Capital = cap,
             this.Resource = Rep,
             this.ImageSrc = imageSrc;
@@ -109,7 +109,7 @@ class Cameroon {
 class Zimbabwe {
     constructor(countryName, detail, cap, Rep, imageSrc) {
         this.country = countryName,
-            this.Detail = detail,
+            this.Money = detail,
             this.Capital = cap,
             this.Resource = Rep,
             this.ImageSrc = imageSrc;
@@ -118,7 +118,7 @@ class Zimbabwe {
 class Senegal {
     constructor(countryName, detail, cap, Rep, imageSrc) {
         this.country = countryName,
-            this.Detail = detail,
+            this.Money = detail,
             this.Capital = cap,
             this.Resource = Rep,
             this.ImageSrc = imageSrc;
@@ -130,88 +130,266 @@ const clicky = () => {
         console.log('Please enter a country name');
         disp.innerHTML = 'Please enter a country name'
     } else if (countryName == "Nigeria") {
-        let student1 = new Nigeria("Nigeria", "bjkb", "njnijnijn", "giibihb", "Nigeria.jpeg");
+        let student1 = new Nigeria("Nigeria", "Naira", "Abuja", "natural gas, tin, iron-ore, cola, limestone and arable-land ", "Nigeria.jpeg");
         console.log(student1);
         document.getElementById("disp").innerHTML = `
         <div class="e-card playing">
         <div class="image"></div>
-        
         <div class="wave"></div>
         <div class="wave"></div>
         <div class="wave"></div>
-        
-      
             <div class="infotop">
-
             <img  src="${student1.ImageSrc}"  alt="${student1.country}" id="countryImage">
-      <br>      
-      <h1>${countryName}</h1>
-      <div class="name">
-      <h1>${student1.Detail}</h1>
-      <h1>${student1.Capital}</h1>
-      <h1>${student1.Resource}</h1>
-       </div>
+            <br>      
+            <h1>${countryName}</h1>
+            <div class="name">
+            <h3>Money: ${student1.Money}</h3>
+            <h3>Capital: ${student1.Capital}</h3>
+            <h3>Resource: ${student1.Resource}</h3>
         </div>
-      </div>
+        </div>
+        </div>
         `
         document.getElementById("countryImage").src = student1.ImageSrc;
         document.getElementById("countryName").value = ""
+
     } else if (countryName == "Egypt") {
-        let student2 = new Egypt("Egypt", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Egypt.png")
+        let student2 = new Egypt("Egypt", "Egypt-pound", "Cairo", "petroleum, natural-gas, phosphates and iron-ore", "Egypt.png")
         console.log(student2);
+        document.getElementById("disp").innerHTML = `
+        <div class="e-card playing">
+        <div class="image"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+            <div class="infotop">
+            <img  src="${student2.ImageSrc}"  alt="${student2.country}" id="countryImage">
+            <br>      
+            <h1>${countryName}</h1>
+            <div class="name">
+            <h3>Money: ${student2.Money}</h3>
+            <h3>Capital: ${student2.Capital}</h3>
+            <h3>Resource: ${student2.Resource}</h3>
+        </div>
+        </div>
+        </div>
+        `
         document.getElementById("countryImage").src = student2.ImageSrc;
         document.getElementById("countryName").value = ""
+
     } else if (countryName == "Madagascar") {
-        let student3 = new Madagascar("Madagascar", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Madagascar.jpg")
+        let student3 = new Madagascar("Madagascar", "Ariary", "Antananarivo", "graphite, chromite, coal, semiprecious, fish and hydropower", "Madagascar.jpg")
         console.log(student3);
+        document.getElementById("disp").innerHTML = `
+        <div class="e-card playing">
+        <div class="image"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+            <div class="infotop">
+            <img  src="${student3.ImageSrc}"  alt="${student3.country}" id="countryImage">
+            <br>      
+            <h1>${countryName}</h1>
+            <div class="name">
+            <h3>Money: ${student3.Money}</h3>
+            <h3>Capital: ${student3.Capital}</h3>
+            <h3>Resource: ${student3.Resource}</h3>
+        </div>
+        </div>
+        </div>
+        `
         document.getElementById("countryImage").src = student3.ImageSrc;
         document.getElementById("countryName").value = ""
     }
     else if (countryName == "Algeria") {
         let student4 = new Algeria("Algeria", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Algeria.webp")
         console.log(student4);
+        document.getElementById("disp").innerHTML = `
+        <div class="e-card playing">
+        <div class="image"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+            <div class="infotop">
+            <img  src="${student4.ImageSrc}"  alt="${student4.country}" id="countryImage">
+            <br>      
+            <h1>${countryName}</h1>
+            <div class="name">
+            <h1>${student4.Detail}</h1>
+            <h1>${student4.Capital}</h1>
+            <h1>${student4.Resource}</h1>
+        </div>
+        </div>
+        </div>
+        `
         document.getElementById("countryImage").src = student4.ImageSrc;
         document.getElementById("countryName").value = ""
     }
     else if (countryName == "Ethiopia") {
         let student5 = new Ethiopia("Ethiopia", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Ethiopia.avif")
         console.log(student5);
+        document.getElementById("disp").innerHTML = `
+        <div class="e-card playing">
+        <div class="image"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+            <div class="infotop">
+            <img  src="${student5.ImageSrc}"  alt="${student5.country}" id="countryImage">
+            <br>      
+            <h1>${countryName}</h1>
+            <div class="name">
+            <h1>${student5.Detail}</h1>
+            <h1>${student5.Capital}</h1>
+            <h1>${student5.Resource}</h1>
+        </div>
+        </div>
+        </div>
+        `
         document.getElementById("countryImage").src = student5.ImageSrc;
         document.getElementById("countryName").value = ""
     }
     else if (countryName == "Tanzania") {
         let student6 = new Tanzania("Tanzania", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Tanzania.jpg")
         console.log(student6);
+        document.getElementById("disp").innerHTML = `
+        <div class="e-card playing">
+        <div class="image"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+            <div class="infotop">
+            <img  src="${student6.ImageSrc}"  alt="${student6.country}" id="countryImage">
+            <br>      
+            <h1>${countryName}</h1>
+            <div class="name">
+            <h1>${student6.Detail}</h1>
+            <h1>${student6.Capital}</h1>
+            <h1>${student6.Resource}</h1>
+        </div>
+        </div>
+        </div>
+        `
         document.getElementById("countryImage").src = student6.ImageSrc;
         document.getElementById("countryName").value = ""
     }
     else if (countryName == "Kenya") {
         let student7 = new Kenya("Kenya", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Kenya.webp")
         console.log(student7);
+        document.getElementById("disp").innerHTML = `
+        <div class="e-card playing">
+        <div class="image"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+            <div class="infotop">
+            <img  src="${student7.ImageSrc}"  alt="${student7.country}" id="countryImage">
+            <br>      
+            <h1>${countryName}</h1>
+            <div class="name">
+            <h1>${student7.Detail}</h1>
+            <h1>${student7.Capital}</h1>
+            <h1>${student7.Resource}</h1>
+        </div>
+        </div>
+        </div>
+        `
         document.getElementById("countryImage").src = student7.ImageSrc;
         document.getElementById("countryName").value = ""
     }
     else if (countryName == "Uganda") {
         let student8 = new Uganda("Uganda", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Uganda.jpg")
         console.log(student8);
+        document.getElementById("disp").innerHTML = `
+        <div class="e-card playing">
+        <div class="image"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+            <div class="infotop">
+            <img  src="${student8.ImageSrc}"  alt="${student8.country}" id="countryImage">
+            <br>      
+            <h1>${countryName}</h1>
+            <div class="name">
+            <h1>${student8.Detail}</h1>
+            <h1>${student8.Capital}</h1>
+            <h1>${student8.Resource}</h1>
+        </div>
+        </div>
+        </div>
+        `
         document.getElementById("countryImage").src = student8.ImageSrc;
         document.getElementById("countryName").value = ""
     }
     else if (countryName == "Morocco") {
         let student9 = new Algeria("Algeria", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Morocco.jpg")
         console.log(student9);
+        document.getElementById("disp").innerHTML = `
+        <div class="e-card playing">
+        <div class="image"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+            <div class="infotop">
+            <img  src="${student9.ImageSrc}"  alt="${student9.country}" id="countryImage">
+            <br>      
+            <h1>${countryName}</h1>
+            <div class="name">
+            <h1>${student9.Detail}</h1>
+            <h1>${student9.Capital}</h1>
+            <h1>${student9.Resource}</h1>
+        </div>
+        </div>
+        </div>
+        `
         document.getElementById("countryImage").src = student9.ImageSrc;
         document.getElementById("countryName").value = ""
     }
     else if (countryName == "Zimbabwe") {
         let student10 = new Zimbabwe("Zimbabwe", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Zimbabwe.avif")
         console.log(student10);
+        document.getElementById("disp").innerHTML = `
+        <div class="e-card playing">
+        <div class="image"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+            <div class="infotop">
+            <img  src="${student10.ImageSrc}"  alt="${student10.country}" id="countryImage">
+            <br>      
+            <h1>${countryName}</h1>
+            <div class="name">
+            <h1>${student10.Detail}</h1>
+            <h1>${student10.Capital}</h1>
+            <h1>${student10.Resource}</h1>
+        </div>
+        </div>
+        </div>
+        `
         document.getElementById("countryImage").src = student10.ImageSrc;
         document.getElementById("countryName").value = ""
     }
     else if (countryName == "Senegal") {
         let student11 = new Senegal("Senegal", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Senegal.jpg")
         console.log(student11);
+        document.getElementById("disp").innerHTML = `
+        <div class="e-card playing">
+        <div class="image"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+            <div class="infotop">
+            <img  src="${student11.ImageSrc}"  alt="${student11.country}" id="countryImage">
+            <br>      
+            <h1>${countryName}</h1>
+            <div class="name">
+            <h1>${student11.Detail}</h1>
+            <h1>${student11.Capital}</h1>
+            <h1>${student11.Resource}</h1>
+        </div>
+        </div>
+        </div>
+        `
         document.getElementById("countryImage").src = student11.ImageSrc;
         document.getElementById("countryName").value = ""
     } else {
