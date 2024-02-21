@@ -560,7 +560,8 @@ const clicky = () => {
     }
 
     else if (countryName == " Niger") {
-        let student17 = new  Niger(" Niger", "CFA Franc", "Niamey", "Gold, coal, petrolum, salt and gypsum", " Niger.jpg")
+        let student17 = new Niger(" Niger", "CFA Franc", "Niamey", "Gold, coal, petrolum, salt and gypsum", " Niger.jpg")
+        console.log(student17);
         document.getElementById("disp").innerHTML = `
             <div class="e-card playing">
             <div class="image"></div>
@@ -614,6 +615,7 @@ const clicky = () => {
         setTimeout(() => {
             show.innerHTML = ""
         }, 3000);
+        
         // Reset the image source and input field
         document.getElementById("countryImage").src = "";
         document.getElementById("countryName").value = "";
