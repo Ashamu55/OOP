@@ -5,8 +5,13 @@
   background-color: #0f2a3d69;
   border-top-left-radius: 80px;
   border-bottom-right-radius: 80px;
-  padding-top: 30px !important;
+  padding-top: 20px !important;
   padding-left: 280px;
+}
+
+#show{
+  margin-left: 250px;
+  mix-blend-mode: difference;
 }
 
 

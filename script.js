@@ -172,7 +172,10 @@ const clicky = () => {
     let countryName = document.getElementById("countryName").value;
     if (countryName == '') {
         console.log('Please enter a country name');
-        disp.innerHTML = 'Please enter a country name'
+        show.innerHTML = 'PLEASE ENTER A COUNTRY NAME'
+        setTimeout(() => {
+            show.innerHTML = ''
+        }, 3000);
     } else if (countryName == "Nigeria") {
         let student1 = new Nigeria("Nigeria", "Naira", "Abuja", "natural gas, tin, iron-ore, cola, limestone and arable-land ", "Nigeria.jpeg");
         document.getElementById("disp").innerHTML = `
@@ -581,6 +584,11 @@ const clicky = () => {
 
     else {
         console.log('Country not found');
+        show.innerHTML = "COUNTRY NOT FOUND"
+        
+        setTimeout(() => {
+            show.innerHTML = ""
+        }, 3000);
         // Reset the image source and input field
         document.getElementById("countryImage").src = "";
         document.getElementById("countryName").value = "";
