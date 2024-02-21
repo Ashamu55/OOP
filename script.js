@@ -145,6 +145,16 @@ class Togo {
     }
 }
 
+class Cameroon {
+    constructor(countryName, detail, cap, Rep, imageSrc) {
+        this.country = countryName,
+            this.Money = detail,
+            this.Capital = cap,
+            this.Resource = Rep,
+            this.ImageSrc = imageSrc;
+    }
+}
+
 const clicky = () => {
     let countryName = document.getElementById("countryName").value;
     if (countryName == '') {
@@ -421,8 +431,8 @@ const clicky = () => {
     } 
 
     else if (countryName == "Mali") {
-        let student11 = new Mali("Mali", "CFA franc", "Bamako", "salt, marble and kaolin", "Mali.jpg")
-        console.log(student11);
+        let student12 = new Mali("Mali", "CFA franc", "Bamako", "salt, marble and kaolin", "Mali.jpg")
+        console.log(student12);
         document.getElementById("disp").innerHTML = `
         <div class="e-card playing">
         <div class="image"></div>
@@ -430,13 +440,63 @@ const clicky = () => {
         <div class="wave"></div>
         <div class="wave"></div>
             <div class="infotop">
-            <img  src="${student11.ImageSrc}"  alt="${student11.country}" id="countryImage">
+            <img  src="${student12.ImageSrc}"  alt="${student12.country}" id="countryImage">
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h3>Money: ${student11.Money}</h3>
-            <h3>Capital: ${student11.Capital}</h3>
-            <h3>Resource: ${student11.Resource}</h3>
+            <h3>Money: ${student12.Money}</h3>
+            <h3>Capital: ${student12.Capital}</h3>
+            <h3>Resource: ${student12.Resource}</h3>
+        </div>
+        </div>
+        </div>
+        `
+        document.getElementById("countryImage").src = student11.ImageSrc;
+        document.getElementById("countryName").value = ""
+    }
+
+    else if (countryName == "Togo") {
+        let student13 = new Togo("Togo", "CFA franc", "Lome", "Gold, uranium, chromite and Diamonds", "togo.jpg")
+        console.log(student13);
+        document.getElementById("disp").innerHTML = `
+        <div class="e-card playing">
+        <div class="image"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+            <div class="infotop">
+            <img  src="${student13.ImageSrc}"  alt="${student13.country}" id="countryImage">
+            <br>      
+            <h1>${countryName}</h1>
+            <div class="name">
+            <h3>Money: ${student13.Money}</h3>
+            <h3>Capital: ${student13.Capital}</h3>
+            <h3>Resource: ${student13.Resource}</h3>
+        </div>
+        </div>
+        </div>
+        `
+        document.getElementById("countryImage").src = student11.ImageSrc;
+        document.getElementById("countryName").value = ""
+    }
+
+    else if (countryName == "Cameroon") {
+        let student14 = new Cameroon("Cameroon", "CFA franc", "Yaounde", "bauxite, rubies, diamond and Gold", "Cameroon.jpg")
+        console.log(student14);
+        document.getElementById("disp").innerHTML = `
+        <div class="e-card playing">
+        <div class="image"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+            <div class="infotop">
+            <img  src="${student14.ImageSrc}"  alt="${student14.country}" id="countryImage">
+            <br>      
+            <h1>${countryName}</h1>
+            <div class="name">
+            <h3>Money: ${student14.Money}</h3>
+            <h3>Capital: ${student14.Capital}</h3>
+            <h3>Resource: ${student14.Resource}</h3>
         </div>
         </div>
         </div>
