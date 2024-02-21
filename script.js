@@ -79,15 +79,6 @@ class Morocco {
             this.ImageSrc = imageSrc;
     }
 }
-class Ghana {
-    constructor(countryName, detail, cap, Rep, imageSrc) {
-        this.country = countryName,
-            this.Money = detail,
-            this.Capital = cap,
-            this.Resource = Rep,
-            this.ImageSrc = imageSrc;
-    }
-}
 class Zimbabwe {
     constructor(countryName, detail, cap, Rep, imageSrc) {
         this.country = countryName,
@@ -167,6 +158,16 @@ class Niger {
     }
 }
 
+class Ghana {
+    constructor(countryName, detail, cap, Rep, imageSrc) {
+        this.country = countryName,
+            this.Money = detail,
+            this.Capital = cap,
+            this.Resource = Rep,
+            this.ImageSrc = imageSrc;
+    }
+}
+
 
 const clicky = () => {
     let countryName = document.getElementById("countryName").value;
@@ -189,7 +190,7 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h3>Money: ${student1.Money}</h3>
+            <h3>Currency: ${student1.Money}</h3>
             <h3>Capital: ${student1.Capital}</h3>
             <h3>Resource: ${student1.Resource}</h3>
         </div>
@@ -212,7 +213,7 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h3>Money: ${student2.Money}</h3>
+            <h3>Currency: ${student2.Money}</h3>
             <h3>Capital: ${student2.Capital}</h3>
             <h3>Resource: ${student2.Resource}</h3>
         </div>
@@ -235,7 +236,7 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h3>Money: ${student3.Money}</h3>
+            <h3>Currency: ${student3.Money}</h3>
             <h3>Capital: ${student3.Capital}</h3>
             <h3>Resource: ${student3.Resource}</h3>
         </div>
@@ -259,7 +260,7 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h3>Money: ${student4.Money}</h3>
+            <h3>Currency: ${student4.Money}</h3>
             <h3>Capital: ${student4.Capital}</h3>
             <h3>Resource: ${student4.Resource}</h3>
         </div>
@@ -283,7 +284,7 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h3>Money: ${student5.Money}</h3>
+            <h3>Currency: ${student5.Money}</h3>
             <h3>Capital: ${student5.Capital}</h3>
             <h3>Resource: ${student5.Resource}</h3>
         </div>
@@ -307,7 +308,7 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h3>Money: ${student6.Money}</h3>
+            <h3>Currency: ${student6.Money}</h3>
             <h3>Capital: ${student6.Capital}</h3>
             <h3>Resource: ${student6.Resource}</h3>
         </div>
@@ -331,7 +332,7 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h3>Money: ${student7.Money}</h3>
+            <h3>Currency: ${student7.Money}</h3>
             <h3>Capital: ${student7.Capital}</h3>
             <h3>Resource: ${student7.Resource}</h3>
         </div>
@@ -355,7 +356,7 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h3>Money: ${student8.Money}</h3>
+            <h3>Currency: ${student8.Money}</h3>
             <h3>Capital: ${student8.Capital}</h3>
             <h3>Resource: ${student8.Resource}</h3>
         </div>
@@ -379,7 +380,7 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h3>Money: ${student9.Money}</h3>
+            <h3>Currency: ${student9.Money}</h3>
             <h3>Capital: ${student9.Capital}</h3>
             <h3>Resource: ${student9.Resource}</h3>
         </div>
@@ -403,7 +404,7 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h3>Money: ${student10.Money}</h3>
+            <h3>Currency: ${student10.Money}</h3>
             <h3>Capital: ${student10.Capital}</h3>
             <h3>Resource: ${student10.Resource}</h3>
         </div>
@@ -427,7 +428,7 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h3>Money: ${student11.Money}</h3>
+            <h3>Currency: ${student11.Money}</h3>
             <h3>Capital: ${student11.Capital}</h3>
             <h3>Resource: ${student11.Resource}</h3>
         </div>
@@ -451,7 +452,7 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h3>Money: ${student12.Money}</h3>
+            <h3>Currency: ${student12.Money}</h3>
             <h3>Capital: ${student12.Capital}</h3>
             <h3>Resource: ${student12.Resource}</h3>
         </div>
@@ -475,7 +476,7 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h3>Money: ${student13.Money}</h3>
+            <h3>Currency: ${student13.Money}</h3>
             <h3>Capital: ${student13.Capital}</h3>
             <h3>Resource: ${student13.Resource}</h3>
         </div>
@@ -499,7 +500,7 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h3>Money: ${student14.Money}</h3>
+            <h3>Currency: ${student14.Money}</h3>
             <h3>Capital: ${student14.Capital}</h3>
             <h3>Resource: ${student14.Resource}</h3>
         </div>
@@ -523,7 +524,7 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h3>Money: ${student15.Money}</h3>
+            <h3>Currency: ${student15.Money}</h3>
             <h3>Capital: ${student15.Capital}</h3>
             <h3>Resource: ${student15.Resource}</h3>
         </div>
@@ -547,7 +548,7 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h3>Money: ${student16.Money}</h3>
+            <h3>Currency: ${student16.Money}</h3>
             <h3>Capital: ${student16.Capital}</h3>
             <h3>Resource: ${student16.Resource}</h3>
         </div>
@@ -571,7 +572,7 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h3>Money: ${student17.Money}</h3>
+            <h3>Currency: ${student17.Money}</h3>
             <h3>Capital: ${student17.Capital}</h3>
             <h3>Resource: ${student17.Resource}</h3>
         </div>
@@ -579,6 +580,30 @@ const clicky = () => {
         </div>
         `
         document.getElementById("countryImage").src = student17.ImageSrc;
+        document.getElementById("countryName").value = ""
+    }
+
+    else if (countryName == "Ghana") {
+        let student18 = new Ghana("Ghana", "cedi", "Accra", "Gold, limestone, iron and bauxite", " Ghana.jpg")
+        document.getElementById("disp").innerHTML = `
+            <div class="e-card playing">
+            <div class="image"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="infotop">
+            <img  src="${student18.ImageSrc}"  alt="${student18.country}" id="countryImage">
+            <br>      
+            <h1>${countryName}</h1>
+            <div class="name">
+            <h3>Currency: ${student18.Money}</h3>
+            <h3>Capital: ${student18.Capital}</h3>
+            <h3>Resource: ${student18.Resource}</h3>
+        </div>
+        </div>
+        </div>
+        `
+        document.getElementById("countryImage").src = student18.ImageSrc;
         document.getElementById("countryName").value = ""
     }
 
