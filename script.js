@@ -202,7 +202,7 @@ const clicky = () => {
         document.getElementById("countryName").value = ""
     }
     else if (countryName == "Algeria") {
-        let student4 = new Algeria("Algeria", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Algeria.webp")
+        let student4 = new Algeria("Algeria", "dinar", "Algiers", "iron-ore, phosphates, uranium and lead", "Algeria.webp")
         console.log(student4);
         document.getElementById("disp").innerHTML = `
         <div class="e-card playing">
@@ -215,9 +215,9 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h1>${student4.Detail}</h1>
-            <h1>${student4.Capital}</h1>
-            <h1>${student4.Resource}</h1>
+            <h3>Money: ${student4.Money}</h3>
+            <h3>Capital: ${student4.Capital}</h3>
+            <h3>Resource: ${student4.Resource}</h3>
         </div>
         </div>
         </div>
@@ -226,7 +226,7 @@ const clicky = () => {
         document.getElementById("countryName").value = ""
     }
     else if (countryName == "Ethiopia") {
-        let student5 = new Ethiopia("Ethiopia", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Ethiopia.avif")
+        let student5 = new Ethiopia("Ethiopia", "birr", "Addis Ababa", "Gold, platinum, copper, potash and natural gas", "Ethiopia.avif")
         console.log(student5);
         document.getElementById("disp").innerHTML = `
         <div class="e-card playing">
@@ -239,9 +239,9 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h1>${student5.Detail}</h1>
-            <h1>${student5.Capital}</h1>
-            <h1>${student5.Resource}</h1>
+            <h3>Money: ${student5.Money}</h3>
+            <h3>Capital: ${student5.Capital}</h3>
+            <h3>Resource: ${student5.Resource}</h3>
         </div>
         </div>
         </div>
@@ -250,7 +250,7 @@ const clicky = () => {
         document.getElementById("countryName").value = ""
     }
     else if (countryName == "Tanzania") {
-        let student6 = new Tanzania("Tanzania", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Tanzania.jpg")
+        let student6 = new Tanzania("Tanzania", "Shilling", "Dodoma", "Gold, Diamond, iron, coal, nickel and natural gas", "Tanzania.jpg")
         console.log(student6);
         document.getElementById("disp").innerHTML = `
         <div class="e-card playing">
@@ -263,9 +263,9 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h1>${student6.Detail}</h1>
-            <h1>${student6.Capital}</h1>
-            <h1>${student6.Resource}</h1>
+            <h3>Money: ${student6.Money}</h3>
+            <h3>Capital: ${student6.Capital}</h3>
+            <h3>Resource: ${student6.Resource}</h3>
         </div>
         </div>
         </div>
@@ -273,8 +273,9 @@ const clicky = () => {
         document.getElementById("countryImage").src = student6.ImageSrc;
         document.getElementById("countryName").value = ""
     }
+
     else if (countryName == "Kenya") {
-        let student7 = new Kenya("Kenya", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Kenya.webp")
+        let student7 = new Kenya("Kenya", "Shilling", "Nairobi", "Gold, iron, steel, and gemstones", "Kenya.webp")
         console.log(student7);
         document.getElementById("disp").innerHTML = `
         <div class="e-card playing">
@@ -287,9 +288,9 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h1>${student7.Detail}</h1>
-            <h1>${student7.Capital}</h1>
-            <h1>${student7.Resource}</h1>
+            <h3>Money: ${student7.Money}</h3>
+            <h3>Capital: ${student7.Capital}</h3>
+            <h3>Resource: ${student7.Resource}</h3>
         </div>
         </div>
         </div>
@@ -297,8 +298,9 @@ const clicky = () => {
         document.getElementById("countryImage").src = student7.ImageSrc;
         document.getElementById("countryName").value = ""
     }
+
     else if (countryName == "Uganda") {
-        let student8 = new Uganda("Uganda", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Uganda.jpg")
+        let student8 = new Uganda("Uganda", "Shilling", "Kampala", "copper, cobait, salt, gold, and limestone", "Uganda.jpg")
         console.log(student8);
         document.getElementById("disp").innerHTML = `
         <div class="e-card playing">
@@ -311,9 +313,9 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h1>${student8.Detail}</h1>
-            <h1>${student8.Capital}</h1>
-            <h1>${student8.Resource}</h1>
+            <h3>Money: ${student8.Money}</h3>
+            <h3>Capital: ${student8.Capital}</h3>
+            <h3>Resource: ${student8.Resource}</h3>
         </div>
         </div>
         </div>
@@ -321,8 +323,9 @@ const clicky = () => {
         document.getElementById("countryImage").src = student8.ImageSrc;
         document.getElementById("countryName").value = ""
     }
+
     else if (countryName == "Morocco") {
-        let student9 = new Algeria("Algeria", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Morocco.jpg")
+        let student9 = new Morocco("Morocco", "Dirham", "Rabat", "barite, clays, silver, salt and zinc", "Morocco.jpg")
         console.log(student9);
         document.getElementById("disp").innerHTML = `
         <div class="e-card playing">
@@ -335,9 +338,9 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h1>${student9.Detail}</h1>
-            <h1>${student9.Capital}</h1>
-            <h1>${student9.Resource}</h1>
+            <h3>Money: ${student9.Money}</h3>
+            <h3>Capital: ${student9.Capital}</h3>
+            <h3>Resource: ${student9.Resource}</h3>
         </div>
         </div>
         </div>
@@ -345,8 +348,9 @@ const clicky = () => {
         document.getElementById("countryImage").src = student9.ImageSrc;
         document.getElementById("countryName").value = ""
     }
+
     else if (countryName == "Zimbabwe") {
-        let student10 = new Zimbabwe("Zimbabwe", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Zimbabwe.avif")
+        let student10 = new Zimbabwe("Zimbabwe", "Zimbabwean Dollar", "Harare", "coal, copper, iron-ore, tin and platinum group metals", "Zimbabwe.avif")
         console.log(student10);
         document.getElementById("disp").innerHTML = `
         <div class="e-card playing">
@@ -359,9 +363,9 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h1>${student10.Detail}</h1>
-            <h1>${student10.Capital}</h1>
-            <h1>${student10.Resource}</h1>
+            <h3>Money: ${student10.Money}</h3>
+            <h3>Capital: ${student10.Capital}</h3>
+            <h3>Resource: ${student10.Resource}</h3>
         </div>
         </div>
         </div>
