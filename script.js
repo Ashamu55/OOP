@@ -124,6 +124,27 @@ class Senegal {
             this.ImageSrc = imageSrc;
     }
 }
+
+class Mali {
+    constructor(countryName, detail, cap, Rep, imageSrc) {
+        this.country = countryName,
+            this.Money = detail,
+            this.Capital = cap,
+            this.Resource = Rep,
+            this.ImageSrc = imageSrc;
+    }
+}
+
+class Togo {
+    constructor(countryName, detail, cap, Rep, imageSrc) {
+        this.country = countryName,
+            this.Money = detail,
+            this.Capital = cap,
+            this.Resource = Rep,
+            this.ImageSrc = imageSrc;
+    }
+}
+
 const clicky = () => {
     let countryName = document.getElementById("countryName").value;
     if (countryName == '') {
@@ -373,8 +394,9 @@ const clicky = () => {
         document.getElementById("countryImage").src = student10.ImageSrc;
         document.getElementById("countryName").value = ""
     }
+
     else if (countryName == "Senegal") {
-        let student11 = new Senegal("Senegal", "hgyhiuhiuhi", "uhuhiuhihouho", "iuhuohohuoh", "Senegal.jpg")
+        let student11 = new Senegal("Senegal", "CFA franc", "Dakar", "Fish, Peanuts, phosphate and Gold", "Senegal.jpg")
         console.log(student11);
         document.getElementById("disp").innerHTML = `
         <div class="e-card playing">
@@ -387,16 +409,43 @@ const clicky = () => {
             <br>      
             <h1>${countryName}</h1>
             <div class="name">
-            <h1>${student11.Detail}</h1>
-            <h1>${student11.Capital}</h1>
-            <h1>${student11.Resource}</h1>
+            <h3>Money: ${student11.Money}</h3>
+            <h3>Capital: ${student11.Capital}</h3>
+            <h3>Resource: ${student11.Resource}</h3>
         </div>
         </div>
         </div>
         `
         document.getElementById("countryImage").src = student11.ImageSrc;
         document.getElementById("countryName").value = ""
-    } else {
+    } 
+
+    else if (countryName == "Mali") {
+        let student11 = new Mali("Mali", "CFA franc", "Bamako", "salt, marble and kaolin", "Mali.jpg")
+        console.log(student11);
+        document.getElementById("disp").innerHTML = `
+        <div class="e-card playing">
+        <div class="image"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+            <div class="infotop">
+            <img  src="${student11.ImageSrc}"  alt="${student11.country}" id="countryImage">
+            <br>      
+            <h1>${countryName}</h1>
+            <div class="name">
+            <h3>Money: ${student11.Money}</h3>
+            <h3>Capital: ${student11.Capital}</h3>
+            <h3>Resource: ${student11.Resource}</h3>
+        </div>
+        </div>
+        </div>
+        `
+        document.getElementById("countryImage").src = student11.ImageSrc;
+        document.getElementById("countryName").value = ""
+    }
+
+    else {
         console.log('Country not found');
         // Reset the image source and input field
         document.getElementById("countryImage").src = "";
